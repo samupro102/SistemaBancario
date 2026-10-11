@@ -23,7 +23,17 @@ public class CuentaCorriente extends Cuenta {
     
     @Override
     public boolean retirar(double valor){
-    
-    
+        if (valor <= 0) {
+            return false;
+        }
+        if (valor <= saldo) {
+            saldo -= valor;
+            return true;
+        } else if (valor <= saldo + cupoSobregiro) {
+            saldo -= valor; 
+            return true;
+        } else {
+            return false;
+        }
 }
 }
