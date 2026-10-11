@@ -27,7 +27,7 @@ public abstract class Cuenta {
         this.fechaApertura = fechaApertura;
         this.saldo = saldoInicial;
     
-
+    }
     public boolean consignar(double valor){
         if (valor > 0) {
             saldo += valor;
