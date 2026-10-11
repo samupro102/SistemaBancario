@@ -47,7 +47,17 @@ public class ControladorBanco {
         }
         cuentas.add(nueva);
         vista.mostrarResultado("Cuenta creada: " + nueva.obtenerInformacion());
-    }   
+    }  
+    public void consignar() {
+        Cuenta c = buscarCuenta(vista.getNumero());
+        if (c == null) {
+            vista.mostrarResultado("No existe la cuenta " + vista.getNumero());
+        } else if (c.consignar(vista.getValor())) {
+            vista.mostrarResultado("Consignación exitosa. " + c.obtenerInformacion(true));
+        } else {
+            vista.mostrarResultado("El valor a consignar debe ser mayor a 0.");
+        }
+    }
     
     
     
