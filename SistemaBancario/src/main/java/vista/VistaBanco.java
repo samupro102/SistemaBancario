@@ -128,6 +128,7 @@ public class VistaBanco extends javax.swing.JFrame {
         btnRetirar.addActionListener(this::btnRetirarActionPerformed);
 
         btnSaldo.setText("Consultar saldo");
+        btnSaldo.addActionListener(this::btnSaldoActionPerformed);
 
         btnInfo.setText("Consultar información");
 
@@ -279,6 +280,10 @@ public class VistaBanco extends javax.swing.JFrame {
     private void btnRetirarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRetirarActionPerformed
         controlador.retirar();
     }//GEN-LAST:event_btnRetirarActionPerformed
+
+    private void btnSaldoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaldoActionPerformed
+        controlador.consultarSaldo();
+    }//GEN-LAST:event_btnSaldoActionPerformed
 
     /**
      * @param args the command line arguments
