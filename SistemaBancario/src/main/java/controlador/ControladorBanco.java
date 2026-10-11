@@ -23,5 +23,31 @@ public class ControladorBanco {
         this.cuentas = new ArrayList<>();
         this.vista.setControlador(this);
     }
+      private Cuenta buscarCuenta(String numero) {
+        for (Cuenta c : cuentas) {
+            if (c.getNumero().equals(numero)) {
+                return c;
+            }
+        }
+        return null;
+    }  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 } 
 
