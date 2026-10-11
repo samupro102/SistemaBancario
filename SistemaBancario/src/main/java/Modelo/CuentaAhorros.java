@@ -8,6 +8,14 @@ package Modelo;
  *
  * @author Titoelgato
  */
-public class CuentaAhorros {
+public class CuentaAhorros extends Cuenta{
+
+    public CuentaAhorros(String numero, String nombreDueno, Fecha fechaApertura) {
+        super(numero, nombreDueno, fechaApertura);
+    }
+
+    public CuentaAhorros(String numero, String nombreDueno, Fecha fechaApertura, Double saldoInicial) {
+        super(numero, nombreDueno, fechaApertura, saldoInicial);
+    }
     
 }
