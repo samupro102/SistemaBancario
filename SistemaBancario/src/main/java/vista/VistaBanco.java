@@ -119,8 +119,10 @@ public class VistaBanco extends javax.swing.JFrame {
         txtNumero.addActionListener(this::txtNumeroActionPerformed);
 
         btnCrear.setText("Crear cuenta");
+        btnCrear.addActionListener(this::btnCrearActionPerformed);
 
         btnConsignar.setText("Consignar");
+        btnConsignar.addActionListener(this::btnConsignarActionPerformed);
 
         btnRetirar.setText("Retirar");
 
@@ -264,6 +266,15 @@ public class VistaBanco extends javax.swing.JFrame {
     private void txtNumeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNumeroActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtNumeroActionPerformed
+
+    private void btnCrearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearActionPerformed
+        controlador.crearCuenta();
+    
+    }//GEN-LAST:event_btnCrearActionPerformed
+
+    private void btnConsignarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConsignarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnConsignarActionPerformed
 
     /**
      * @param args the command line arguments
