@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package vista;
-
+import controlador.ControladorBanco; 
 /**
  *
  * @author Windows 11
@@ -17,6 +17,11 @@ public class VistaBanco extends javax.swing.JFrame {
      */
     public VistaBanco() {
         initComponents();
+    }
+     private ControladorBanco controlador;
+
+    public void setControlador(ControladorBanco controlador) {
+        this.controlador = controlador;
     }
     public String getNumero() {
         return txtNumero.getText();
