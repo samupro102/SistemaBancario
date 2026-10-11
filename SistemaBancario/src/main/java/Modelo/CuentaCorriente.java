@@ -8,6 +8,8 @@ package Modelo;
  *
  * @author Titoelgato
  */
-public class CuentaCorriente {
+public class CuentaCorriente extends Cuenta {
+    private double cupoSobregiro;
+    
     
 }
