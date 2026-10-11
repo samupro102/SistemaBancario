@@ -36,4 +36,13 @@ public class CuentaCorriente extends Cuenta {
             return false;
         }
 }
+    
+    @Override
+    public String obtenerInformacion() {
+        return super.obtenerInformacion() + " | Cupo sobregiro: " + cupoSobregiro;
+    }
+
+    public double getCupoSobregiro() {
+        return cupoSobregiro;
+    }
 }
