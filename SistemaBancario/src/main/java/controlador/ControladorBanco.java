@@ -68,6 +68,14 @@ public class ControladorBanco {
             vista.mostrarResultado("Retiro rechazado: fondos o cupo insuficientes.");
         }
     }
+        public void consultarInformacion() {
+        Cuenta c = buscarCuenta(vista.getNumero());
+        if (c == null) {
+            vista.mostrarResultado("No existe la cuenta " + vista.getNumero());
+        } else {
+            vista.mostrarResultado(c.obtenerInformacion());
+        }
+    }       
     
     
     
