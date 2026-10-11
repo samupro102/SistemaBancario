@@ -38,6 +38,10 @@ public abstract class Cuenta {
     public abstract boolean retirar(double valor);
         
         
-    
+    public String obtenerInformacion(){
+        
+        return "Cuenta" + numero + " | Dueño: " + nombreDueno
+                + " | Apertura: " + fechaApertura + " | Saldo: " + saldo;
+    }
     
 }
