@@ -44,4 +44,11 @@ public abstract class Cuenta {
                 + " | Apertura: " + fechaApertura + " | Saldo: " + saldo;
     }
     
+    public String obtenerInformacion(boolean soloSaldo) {
+        if (soloSaldo) {
+            return "Saldo de la cuenta " + numero + ": " + saldo;
+        }
+        return obtenerInformacion();
+    }
+    
 }
