@@ -18,7 +18,16 @@ public abstract class Cuenta {
         this.numero = numero;
         this.nombreDueno = nombreDueno;
         this.fechaApertura = fechaApertura;
+        this.saldo = 0;
     }
+    public Cuenta(String numero, String nombreDueno, Fecha fechaApertura,Double saldoInicial){
+        
+        this.numero = numero;
+        this.nombreDueno = nombreDueno;
+        this.fechaApertura = fechaApertura;
+        this.saldo = saldoInicial;
     
     
+    
+}
 }
