@@ -31,8 +31,23 @@ public class ControladorBanco {
         }
         return null;
     }  
-    
-    
+    public void crearCuenta() {
+        String numero = vista.getNumero();
+        if (buscarCuenta(numero) != null) {
+            vista.mostrarResultado("Ya existe una cuenta con el número " + numero);
+            return;
+        }
+        Fecha fecha = new Fecha(vista.getDia(), vista.getMes(), vista.getAnio());
+        double saldo = vista.getSaldoInicial();
+        Cuenta nueva;
+        if (vista.getTipoCuenta().equals("Ahorros")) {
+            nueva = new CuentaAhorros(numero, vista.getNombre(), fecha, saldo);
+        } else {
+            nueva = new CuentaCorriente(vista.getCupo(), numero, vista.getNombre(), fecha, saldo);
+        }
+        cuentas.add(nueva);
+        vista.mostrarResultado("Cuenta creada: " + nueva.obtenerInformacion());
+    }   
     
     
     
