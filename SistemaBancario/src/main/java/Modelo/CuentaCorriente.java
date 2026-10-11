@@ -10,6 +10,20 @@ package Modelo;
  */
 public class CuentaCorriente extends Cuenta {
     private double cupoSobregiro;
+
+    public CuentaCorriente(double cupoSobregiro, String numero, String nombreDueno, Fecha fechaApertura) {
+        super(numero, nombreDueno, fechaApertura);
+        this.cupoSobregiro = cupoSobregiro;
+    }
+
+    public CuentaCorriente(double cupoSobregiro, String numero, String nombreDueno, Fecha fechaApertura, Double saldoInicial) {
+        super(numero, nombreDueno, fechaApertura, saldoInicial);
+        this.cupoSobregiro = cupoSobregiro;
+    }
+    
+    @Override
+    public boolean retirar(double valor){
     
     
+}
 }
