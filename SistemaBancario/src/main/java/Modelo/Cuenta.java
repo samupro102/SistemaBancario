@@ -13,4 +13,12 @@ public abstract class Cuenta {
     protected String nombreDueno;
     protected Fecha fechaApertura;
     protected double saldo;
+
+    public Cuenta(String numero, String nombreDueno, Fecha fechaApertura) {
+        this.numero = numero;
+        this.nombreDueno = nombreDueno;
+        this.fechaApertura = fechaApertura;
+    }
+    
+    
 }
