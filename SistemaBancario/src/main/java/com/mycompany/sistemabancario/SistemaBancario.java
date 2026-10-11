@@ -3,7 +3,8 @@
  */
 
 package com.mycompany.sistemabancario;
-
+import controlador.ControladorBanco;
+import vista.VistaBanco;
 /**
  *
  * @author Windows 11
@@ -11,6 +12,8 @@ package com.mycompany.sistemabancario;
 public class SistemaBancario {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        VistaBanco vista = new VistaBanco();
+        new ControladorBanco(vista);
+        vista.setVisible(true);
     }
 }
