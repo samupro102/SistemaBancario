@@ -19,5 +19,15 @@ public class Fecha {
         this.ano = ano;
     }
 
+    public int getDia() {
+        return dia;
+    }
 
+    public int getMes() {
+        return mes;
+    }
+
+    public int getAno() {
+        return ano;
+    }
 }
