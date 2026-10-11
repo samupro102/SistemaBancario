@@ -131,6 +131,7 @@ public class VistaBanco extends javax.swing.JFrame {
         btnSaldo.addActionListener(this::btnSaldoActionPerformed);
 
         btnInfo.setText("Consultar información");
+        btnInfo.addActionListener(this::btnInfoActionPerformed);
 
         lblTipo.setText("Tipo de cuenta");
 
@@ -274,7 +275,7 @@ public class VistaBanco extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCrearActionPerformed
 
     private void btnConsignarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConsignarActionPerformed
-                controlador.consignar();
+        controlador.consignar();
     }//GEN-LAST:event_btnConsignarActionPerformed
 
     private void btnRetirarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRetirarActionPerformed
@@ -284,6 +285,11 @@ public class VistaBanco extends javax.swing.JFrame {
     private void btnSaldoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaldoActionPerformed
         controlador.consultarSaldo();
     }//GEN-LAST:event_btnSaldoActionPerformed
+
+    private void btnInfoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInfoActionPerformed
+        controlador.consultarInformacion();
+
+    }//GEN-LAST:event_btnInfoActionPerformed
 
     /**
      * @param args the command line arguments
