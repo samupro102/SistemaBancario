@@ -18,4 +18,9 @@ public class CuentaAhorros extends Cuenta{
         super(numero, nombreDueno, fechaApertura, saldoInicial);
     }
     
+    @Override
+    public boolean retirar(double valor){
+        
+    }
+    
 }
