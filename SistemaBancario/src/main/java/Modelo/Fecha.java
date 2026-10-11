@@ -30,4 +30,7 @@ public class Fecha {
     public int getAno() {
         return ano;
     }
+   public String toString(){
+       return "dia:"+ dia + "mes"+ mes + "año";
+   }
 }
