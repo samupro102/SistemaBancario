@@ -35,5 +35,9 @@ public abstract class Cuenta {
         }
         return false;
     }
+    public abstract boolean retirar(double valor);
+        
+        
+    
     
 }
