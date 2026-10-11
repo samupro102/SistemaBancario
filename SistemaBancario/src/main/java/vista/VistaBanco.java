@@ -93,6 +93,7 @@ public class VistaBanco extends javax.swing.JFrame {
         txtResultado = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Sistema Bancario");
 
         lblNumero.setText("Número de cuenta:");
 
@@ -110,21 +111,7 @@ public class VistaBanco extends javax.swing.JFrame {
 
         lblValor.setText("Valor (consignar/retirar):");
 
-        txtNumero.setText("jTextField1");
-
-        txtNombre.setText("jTextField2");
-
-        txtDia.setText("jTextField3");
-
-        txtMes.setText("jTextField4");
-
-        txtAnio.setText("jTextField5");
-
-        txtSaldoInicial.setText("jTextField6");
-
-        txtCupo.setText("jTextField7");
-
-        txtValor.setText("jTextField8");
+        txtNumero.addActionListener(this::txtNumeroActionPerformed);
 
         btnCrear.setText("Crear cuenta");
 
@@ -268,6 +255,10 @@ public class VistaBanco extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void txtNumeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNumeroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNumeroActionPerformed
 
     /**
      * @param args the command line arguments
