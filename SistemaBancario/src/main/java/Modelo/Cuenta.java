@@ -50,5 +50,15 @@ public abstract class Cuenta {
         }
         return obtenerInformacion();
     }
+
+    public String getNumero() {
+        return numero;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+    
+    
     
 }
