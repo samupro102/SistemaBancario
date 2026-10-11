@@ -58,6 +58,14 @@ public class ControladorBanco {
             vista.mostrarResultado("El valor a consignar debe ser mayor a 0.");
         }
     }
+        public void consultarSaldo() {
+        Cuenta c = buscarCuenta(vista.getNumero());
+        if (c == null) {
+            vista.mostrarResultado("No existe la cuenta " + vista.getNumero());
+        } else {
+            vista.mostrarResultado(c.obtenerInformacion(true));
+        }
+    }
         public void retirar() {
         Cuenta c = buscarCuenta(vista.getNumero());
         if (c == null) {
