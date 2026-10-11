@@ -9,5 +9,8 @@ package Modelo;
  * @author Titoelgato
  */
 public class Cuenta {
-    
+    protected String numero;
+    protected String nombreDueno;
+    protected Fecha fechaApertura;
+    protected double saldo;
 }
