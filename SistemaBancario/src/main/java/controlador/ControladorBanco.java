@@ -58,6 +58,16 @@ public class ControladorBanco {
             vista.mostrarResultado("El valor a consignar debe ser mayor a 0.");
         }
     }
+        public void retirar() {
+        Cuenta c = buscarCuenta(vista.getNumero());
+        if (c == null) {
+            vista.mostrarResultado("No existe la cuenta " + vista.getNumero());
+        } else if (c.retirar(vista.getValor())) {
+            vista.mostrarResultado("Retiro exitoso. " + c.obtenerInformacion(true));
+        } else {
+            vista.mostrarResultado("Retiro rechazado: fondos o cupo insuficientes.");
+        }
+    }
     
     
     
